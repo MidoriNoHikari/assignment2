@@ -1,0 +1,9 @@
+.stats {
+  padding: 5px;
+  width: 30px;
+  margin: 5px;
+}
+
+[name="age"] {
+  width: 40px;
+}
