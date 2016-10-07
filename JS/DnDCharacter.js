@@ -59,26 +59,47 @@ function validateForm() {
 	document.getElementsByTagName("label")[12].style.color = "red";
 	statInvalid = true;	
   }
+  else {
+	statInvalid = false;
+	document.getElementsByTagName("label")[7].style.color = "black";
+	document.getElementsByTagName("label")[8].style.color = "black";
+	document.getElementsByTagName("label")[9].style.color = "black";
+	document.getElementsByTagName("label")[10].style.color = "black";
+	document.getElementsByTagName("label")[11].style.color = "black";
+	document.getElementsByTagName("label")[12].style.color = "black";
+  }
   if (age <= 18){
 	alert("Character is too young to go adventuring!");
 	document.getElementsByTagName("label")[2].style.color = "red";
 	ageInvalid = true;
+  }
+  else {
+    ageInvalid = false;
+	document.getElementsByTagName("label")[2].style.color = "black";
   }
   if (pName == null || pName == "") {
 	alert("Tell me, what is your name?");
 	document.getElementsByTagName("label")[0].style.color = "red";
 	nameInvalid = true;
   }
+  else {
+    nameInvalid = false;
+	document.getElementsByTagName("label")[0].style.color = "black";
+  }
   if (cName == null || cName == "") {
     alert("You must name your character something...");
 	document.getElementsByTagName("label")[1].style.color = "red";
     nameInvalid = true;	
   }
+  else {
+    nameInvalid = false;
+	document.getElementsByTagName("label")[1].style.color = "black";
+  }
   if (nameInvalid == true || ageInvalid == true || statInvalid == true) {
 	return false;
   }
   else {
-	alert("How do you do?");
+	//alert("How do you do?");
 	$("#submission").prop("disabled", false);
     return true;
   }

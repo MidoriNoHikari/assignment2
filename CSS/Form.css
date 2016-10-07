@@ -1,9 +1,70 @@
-.stats {
-  padding: 5px;
-  width: 30px;
-  margin: 5px;
+html {
+  background-color: #AAAA55;
+}
+
+h1 {
+  text-align: center;
+}
+
+fieldset {
+  background-color: #BBAA88;
+  width: 40%;
+}
+
+#characterForm {
+  
+}
+
+[name="playerName"] {
+  margin-left: 22px;
 }
 
 [name="age"] {
   width: 40px;
+  margin-left: 78px;
+}
+
+[name="gender"] {
+  margin-left: 58px;
+}
+
+[name="alignment"] {
+  margin-left: 35px;
+}
+
+[name="race"] {
+  margin: 0 30px 0 5px;
+}
+
+[name="class"] {
+  margin-left: 5px;
+}
+
+.stats {
+  width: 30px;
+  margin: 0 0 2px 0;
+}
+
+[name="str"] {
+  margin-left: 30px;
+}
+
+[name="dex"] {
+  margin-left: 24px;
+}
+
+[name="con"] {
+  margin-left: 5px;
+}
+
+[name="inT"] {
+  margin-left: 9px;
+}
+
+[name="wis"] {
+  margin-left: 31px;
+}
+
+[name="cha"] {
+  margin-left: 23px;
 }

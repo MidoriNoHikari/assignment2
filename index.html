@@ -9,14 +9,15 @@
   </head>
   <body>
     <div id="intro">
+	  <h1>D&amp;D Character Creation: Level 1</h1>
 	  <p> 
 	    Welcome to the D&amp;D Character Creator Page. This tool is part of a project for CS 1520, it doesn't actually submit to a real server, nevertheless do enjoy it. For skill points, we will be using the point-buy system. Every skill starts off at 8 (a -1 to each stat) and you may add the remaining 27 points as you see fit. This will not include any bonuses associated with your race.
 	  </p>
 	</div>
 	<div id="characterForm">
-	  <form action="" onsubmit="validate(event);" method="post">
+	  <form action="" method="post">
 	    <fieldset>
-	      <label for="playerName">Player Name:</label>
+	      <label for="playerName">Player Name:<span></label>
 	      <input type="text" name="playerName">
 		  <br/>
 		  <label for="characterName">Character Name:</label>
@@ -97,6 +98,6 @@
 		<input type="button" value="Validate" name="button" onclick="validateForm();">
 		<input type="submit" name="submit" id="submission">
       </form>
-	<div>
+	</div>
   </body>
 </html>
